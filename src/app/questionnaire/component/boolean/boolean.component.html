@@ -1,0 +1,4 @@
+<h1>{{ config.title }}</h1>
+
+<button [class.active]="data.choice === true" (click)="handleChange(true)">Yes</button>
+<button [class.active]="data.choice === false" (click)="handleChange(false)">No</button>

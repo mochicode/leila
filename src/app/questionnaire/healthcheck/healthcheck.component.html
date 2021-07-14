@@ -1,0 +1,10 @@
+
+<section>
+	<h1 *ngIf="state.currentStep === null; else questions">Result</h1>
+	<ng-template #questions [questionnaireHost]></ng-template>
+</section>
+
+<footer>
+	<button (click)="back()">prev</button>
+	<button (click)="next()">next</button>
+</footer>

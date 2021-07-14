@@ -1,0 +1,11 @@
+<h1>{{ config.title }}</h1>
+
+<ul>
+	<li *ngFor="let option of config.options">
+		<button
+			[class.active]="option.value === data.selected"
+			(click)="handleSelect(option.value)">
+			{{ option.label }}
+		</button>
+	</li>
+</ul>
